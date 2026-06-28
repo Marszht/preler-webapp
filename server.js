@@ -10,6 +10,7 @@
 const express = require("express");
 const multer = require("multer");
 const { Jimp } = require("jimp");
+const path = require("path");
 
 const PerlerCore = require("./lib/perlerCore");
 const { MARD_221_PALETTE } = require("./lib/mardPalette");
@@ -20,8 +21,8 @@ const upload = multer({
   limits: { fileSize: 20 * 1024 * 1024 }, // 20MB
 });
 
-app.use(express.static("public"));
-app.use("/lib", express.static("lib")); // 让浏览器能直接 <script src="/lib/perlerCore.js">
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/lib", express.static(path.join(__dirname, "lib"))); // 让浏览器能直接 <script src="/lib/perlerCore.js">
 
 // 把色卡也暴露给前端展示用
 app.get("/api/palette", (req, res) => {
