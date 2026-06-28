@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>拼豆底稿生成器</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="topbar">
+  <div class="topbar-mark">⬚</div>
+  <div class="topbar-text">
+    <h1>拼豆底稿生成器</h1>
+    <p>上传图片 · 生成可拼的色号网格图 · MARD 221 色卡</p>
+  </div>
+</header>
+
+<main class="layout">
+
+  <!-- 左侧：上传 + 参数面板 -->
+  <section class="panel">
+
+    <div class="card">
+      <div class="card-label">01 / 图片</div>
+      <label class="dropzone" id="dropzone">
+        <input type="file" id="fileInput" accept="image/*" hidden />
+        <img id="previewImg" class="preview-img" hidden />
+        <div id="dropzoneHint" class="dropzone-hint">
+          <div class="dropzone-icon">+</div>
+          <div>点击或拖拽图片到这里</div>
+        </div>
+      </label>
+    </div>
+
+    <div class="card">
+      <div class="card-label">02 / 网格尺寸</div>
+      <div class="field-row">
+        <label class="field">
+          <span>宽 (格)</span>
+          <input type="number" id="gridW" value="60" min="10" max="200" />
+        </label>
+        <label class="field">
+          <span>高 (格)</span>
+          <input type="number" id="gridH" value="60" min="10" max="200" />
+        </label>
+      </div>
+      <div class="preset-row">
+        <button type="button" class="preset-btn" data-w="29" data-h="29">29×29</button>
+        <button type="button" class="preset-btn" data-w="48" data-h="48">48×48</button>
+        <button type="button" class="preset-btn" data-w="58" data-h="58">58×58</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">03 / 颜色匹配</div>
+      <label class="field-block">
+        <span>色差算法</span>
+        <select id="distanceMode">
+          <option value="lab">Lab 欧氏距离（快）</option>
+          <option value="ciede2000" selected>CIEDE2000（更准，慢）</option>
+        </select>
+      </label>
+      <label class="field-block">
+        <span>限制颜色种类数（留空 = 不限制）</span>
+        <input type="number" id="maxColors" value="24" min="2" max="221" placeholder="不限制" />
+      </label>
+    </div>
+
+    <div class="card">
+      <div class="card-label">04 / 抖动</div>
+      <label class="field-block">
+        <span>算法</span>
+        <select id="dither">
+          <option value="none">无（纯色块）</option>
+          <option value="floyd-steinberg" selected>Floyd-Steinberg（细节多）</option>
+          <option value="atkinson">Atkinson（更柔和）</option>
+        </select>
+      </label>
+      <label class="field-block">
+        <span>强度 <span id="ditherStrengthVal" class="val-tag">100%</span></span>
+        <input type="range" id="ditherStrength" min="0" max="100" value="100" />
+      </label>
+      <label class="checkbox-field">
+        <input type="checkbox" id="despeckle" checked />
+        <span>去除孤立噪点格</span>
+      </label>
+    </div>
+
+    <div class="card">
+      <div class="card-label">05 / 背景</div>
+      <label class="checkbox-field">
+        <input type="checkbox" id="removeBg" />
+        <span>识别并去除背景（不出豆）</span>
+      </label>
+      <div id="bgOptions" class="sub-options" hidden>
+        <label class="checkbox-field">
+          <input type="checkbox" id="useAlpha" checked />
+          <span>优先用透明通道判断（PNG 抠图）</span>
+        </label>
+        <div class="field-row">
+          <label class="field">
+            <span>背景色 RGB</span>
+            <input type="text" id="bgColor" value="0,0,0" placeholder="0,0,0" />
+          </label>
+          <label class="field">
+            <span>容差</span>
+            <input type="number" id="bgThreshold" value="12" min="0" max="100" />
+          </label>
+        </div>
+        <label class="checkbox-field">
+          <input type="checkbox" id="autoCrop" />
+          <span>自动裁切主体（去掉多余背景留白）</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">06 / 预处理</div>
+      <label class="field-block">
+        <span>亮度 <span id="brightnessVal" class="val-tag">0</span></span>
+        <input type="range" id="brightness" min="-100" max="100" value="0" />
+      </label>
+      <label class="field-block">
+        <span>对比度 <span id="contrastVal" class="val-tag">0</span></span>
+        <input type="range" id="contrast" min="-100" max="100" value="0" />
+      </label>
+      <label class="field-block">
+        <span>饱和度 <span id="saturationVal" class="val-tag">0</span></span>
+        <input type="range" id="saturation" min="-100" max="100" value="0" />
+      </label>
+    </div>
+
+    <button id="convertBtn" class="convert-btn" disabled>转换为底稿</button>
+    <div id="statusLine" class="status-line"></div>
+  </section>
+
+  <!-- 右侧：结果展示 -->
+  <section class="result">
+    <div class="result-header">
+      <div class="card-label">底稿预览</div>
+      <div class="result-actions" id="resultActions" hidden>
+        <label class="field inline">
+          <span>格子像素</span>
+          <input type="number" id="cellSize" value="10" min="4" max="40" />
+        </label>
+        <label class="checkbox-field inline">
+          <input type="checkbox" id="showLabels" checked />
+          <span>显示色号</span>
+        </label>
+        <button id="downloadBtn" class="download-btn">下载 PNG</button>
+      </div>
+    </div>
+
+    <div class="canvas-wrap" id="canvasWrap">
+      <div class="canvas-placeholder" id="canvasPlaceholder">
+        上传图片并点击「转换为底稿」后，结果会显示在这里
+      </div>
+      <canvas id="resultCanvas" hidden></canvas>
+    </div>
+
+    <div class="stats" id="stats" hidden>
+      <div class="stats-summary" id="statsSummary"></div>
+      <table class="stats-table">
+        <thead>
+          <tr><th>色号</th><th>颜色</th><th>数量</th></tr>
+        </thead>
+        <tbody id="statsBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<script src="/lib/perlerCore.js"></script>
+<script src="/lib/perlerRender.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

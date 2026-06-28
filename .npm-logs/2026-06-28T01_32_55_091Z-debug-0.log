@@ -1,0 +1,245 @@
+0 verbose cli /Users/zhu_mars/.nvm/versions/node/v22.17.0/bin/node /Users/zhu_mars/.nvm/versions/node/v22.17.0/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.17.0
+3 silly config load:file:/Users/zhu_mars/.nvm/versions/node/v22.17.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Volumes/MARS SSD/workspace/perler-webapp/.npmrc
+5 silly config load:file:/Users/zhu_mars/.npmrc
+6 silly config load:file:/Users/zhu_mars/.nvm/versions/node/v22.17.0/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--force" "--cache" "./.npm-cache" "--logs-dir" "./.npm-logs"
+9 verbose logfile logs-max:10 dir:/Volumes/MARS SSD/workspace/perler-webapp/.npm-logs/2026-06-28T01_32_55_091Z-
+10 verbose logfile /Volumes/MARS SSD/workspace/perler-webapp/.npm-logs/2026-06-28T01_32_55_091Z-debug-0.log
+11 warn using --force Recommended protections disabled.
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+14 silly idealTree buildDeps
+15 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/any-base' ]
+16 silly reify mark retired [
+16 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/await-to-js'
+16 silly reify ]
+17 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/bmp-ts' ]
+18 silly reify mark retired [
+18 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/body-parser'
+18 silly reify ]
+19 silly reify mark retired [
+19 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/exif-parser'
+19 silly reify ]
+20 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/file-type' ]
+21 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/gifwrap' ]
+22 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/image-q' ]
+23 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/jimp' ]
+24 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/jpeg-js' ]
+25 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/mime' ]
+26 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/multer' ]
+27 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/omggif' ]
+28 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/pako' ]
+29 silly reify mark retired [
+29 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/parse-bmfont-ascii'
+29 silly reify ]
+30 silly reify mark retired [
+30 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/parse-bmfont-binary'
+30 silly reify ]
+31 silly reify mark retired [
+31 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/parse-bmfont-xml'
+31 silly reify ]
+32 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/pixelmatch' ]
+33 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/pngjs' ]
+34 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/qs' ]
+35 silly reify mark retired [
+35 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/range-parser'
+35 silly reify ]
+36 silly reify mark retired [
+36 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/simple-xml-to-json'
+36 silly reify ]
+37 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/strtok3' ]
+38 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/tinycolor2' ]
+39 silly reify mark retired [
+39 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/token-types'
+39 silly reify ]
+40 silly reify mark retired [
+40 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/uint8array-extras'
+40 silly reify ]
+41 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/utif2' ]
+42 silly reify mark retired [
+42 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/xml-parse-from-string'
+42 silly reify ]
+43 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/xml2js' ]
+44 silly reify mark retired [
+44 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@borewit/text-codec'
+44 silly reify ]
+45 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/core' ]
+46 silly reify mark retired [ '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/diff' ]
+47 silly reify mark retired [
+47 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/file-ops'
+47 silly reify ]
+48 silly reify mark retired [
+48 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/js-gif'
+48 silly reify ]
+49 silly reify mark retired [
+49 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/js-jpeg'
+49 silly reify ]
+50 silly reify mark retired [
+50 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/js-bmp'
+50 silly reify ]
+51 silly reify mark retired [
+51 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/js-png'
+51 silly reify ]
+52 silly reify mark retired [
+52 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/js-tiff'
+52 silly reify ]
+53 silly reify mark retired [
+53 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-circle'
+53 silly reify ]
+54 silly reify mark retired [
+54 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-blur'
+54 silly reify ]
+55 silly reify mark retired [
+55 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-color'
+55 silly reify ]
+56 silly reify mark retired [
+56 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-contain'
+56 silly reify ]
+57 silly reify mark retired [
+57 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-crop'
+57 silly reify ]
+58 silly reify mark retired [
+58 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-cover'
+58 silly reify ]
+59 silly reify mark retired [
+59 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-displace'
+59 silly reify ]
+60 silly reify mark retired [
+60 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-blit'
+60 silly reify ]
+61 silly reify mark retired [
+61 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-dither'
+61 silly reify ]
+62 silly reify mark retired [
+62 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-fisheye'
+62 silly reify ]
+63 silly reify mark retired [
+63 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-flip'
+63 silly reify ]
+64 silly reify mark retired [
+64 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-hash'
+64 silly reify ]
+65 silly reify mark retired [
+65 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-mask'
+65 silly reify ]
+66 silly reify mark retired [
+66 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-print'
+66 silly reify ]
+67 silly reify mark retired [
+67 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-quantize'
+67 silly reify ]
+68 silly reify mark retired [
+68 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-resize'
+68 silly reify ]
+69 silly reify mark retired [
+69 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/types'
+69 silly reify ]
+70 silly reify mark retired [
+70 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/utils'
+70 silly reify ]
+71 silly reify mark retired [
+71 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-threshold'
+71 silly reify ]
+72 silly reify mark retired [
+72 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@tokenizer/inflate'
+72 silly reify ]
+73 silly reify mark retired [
+73 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-rotate'
+73 silly reify ]
+74 silly reify mark retired [
+74 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@tokenizer/token'
+74 silly reify ]
+75 silly reify mark retired [
+75 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@types/node'
+75 silly reify ]
+76 silly reify moves {
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/any-base': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.any-base-OgAwGToR',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/await-to-js': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.await-to-js-lZHs18zK',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/bmp-ts': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.bmp-ts-7oos9RUw',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/body-parser': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.body-parser-1TACIJEX',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/exif-parser': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.exif-parser-eSFJCytp',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/file-type': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.file-type-w8rHicPh',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/gifwrap': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.gifwrap-KBm0Wpx0',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/image-q': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.image-q-M0ibX2wk',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/jimp': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.jimp-PhRBWmWm',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/jpeg-js': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.jpeg-js-LSqEkB5c',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/mime': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.mime-4Bn9Sv8n',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/multer': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.multer-PkrLfCNN',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/omggif': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.omggif-DkaXaFck',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/pako': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.pako-nBqvQW3y',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/parse-bmfont-ascii': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.parse-bmfont-ascii-stBLA3cD',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/parse-bmfont-binary': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.parse-bmfont-binary-UPYs3MnW',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/parse-bmfont-xml': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.parse-bmfont-xml-EV6TzxZ4',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/pixelmatch': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.pixelmatch-v2u10J6I',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/pngjs': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.pngjs-Vs2KjSEm',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/qs': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.qs-uGXFFiDf',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/range-parser': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.range-parser-dS6M3F7C',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/simple-xml-to-json': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.simple-xml-to-json-vodh0roJ',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/strtok3': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.strtok3-YGQwm0cg',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/tinycolor2': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.tinycolor2-iQrFZceQ',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/token-types': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.token-types-CmwS1tGm',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/uint8array-extras': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.uint8array-extras-nf81q555',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/utif2': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.utif2-sbWNyUN0',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/xml-parse-from-string': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.xml-parse-from-string-qhU3U9to',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/xml2js': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.xml2js-Ii5gnPg3',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@borewit/text-codec': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@borewit/.text-codec-VQn0dwDs',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/core': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.core-O2bHs5zl',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/diff': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.diff-edLJQlpS',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/file-ops': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.file-ops-dMdtnPsx',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/js-gif': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.js-gif-BzfIL6pz',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/js-jpeg': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.js-jpeg-Hh34HJXr',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/js-bmp': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.js-bmp-jJ0MKLEu',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/js-png': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.js-png-HKcUUIY1',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/js-tiff': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.js-tiff-evc01QDR',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-circle': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-circle-NKPaVbil',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-blur': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-blur-H8nvftgj',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-color': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-color-mEv6sgFI',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-contain': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-contain-kVXr1EM4',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-crop': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-crop-FiYc5VSU',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-cover': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-cover-UUzxTF5V',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-displace': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-displace-TVcgbv0Q',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-blit': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-blit-Xg3u9FyE',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-dither': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-dither-DDBBwhu8',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-fisheye': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-fisheye-gL7Npu1L',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-flip': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-flip-SJnSqoqr',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-hash': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-hash-uD7GBaV9',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-mask': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-mask-yEy440yE',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-print': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-print-9Idez4FB',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-quantize': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-quantize-MFr0YF5V',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-resize': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-resize-SqTGXzHc',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/types': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.types-fBhbYcmN',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/utils': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.utils-gO5RANcM',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-threshold': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-threshold-52IkjH2s',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@tokenizer/inflate': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@tokenizer/.inflate-qK59r99I',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/plugin-rotate': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@jimp/.plugin-rotate-HQB5syhE',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@tokenizer/token': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@tokenizer/.token-2qKRFlbE',
+76 silly reify   '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@types/node': '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/@types/.node-zs7O2Weg'
+76 silly reify }
+77 verbose stack Error: ENOTEMPTY: directory not empty, rename '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/multer' -> '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.multer-PkrLfCNN'
+77 verbose stack     at async Object.rename (node:internal/fs/promises:784:10)
+77 verbose stack     at async moveFile (/Users/zhu_mars/.nvm/versions/node/v22.17.0/lib/node_modules/npm/node_modules/@npmcli/fs/lib/move-file.js:30:5)
+77 verbose stack     at async Promise.allSettled (index 11)
+77 verbose stack     at async [reifyPackages] (/Users/zhu_mars/.nvm/versions/node/v22.17.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:325:11)
+77 verbose stack     at async Arborist.reify (/Users/zhu_mars/.nvm/versions/node/v22.17.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:142:5)
+77 verbose stack     at async Install.exec (/Users/zhu_mars/.nvm/versions/node/v22.17.0/lib/node_modules/npm/lib/commands/install.js:150:5)
+77 verbose stack     at async Npm.exec (/Users/zhu_mars/.nvm/versions/node/v22.17.0/lib/node_modules/npm/lib/npm.js:207:9)
+77 verbose stack     at async module.exports (/Users/zhu_mars/.nvm/versions/node/v22.17.0/lib/node_modules/npm/lib/cli/entry.js:74:5)
+78 error code ENOTEMPTY
+79 error syscall rename
+80 error path /Volumes/MARS SSD/workspace/perler-webapp/node_modules/multer
+81 error dest /Volumes/MARS SSD/workspace/perler-webapp/node_modules/.multer-PkrLfCNN
+82 error errno -66
+83 error ENOTEMPTY: directory not empty, rename '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/multer' -> '/Volumes/MARS SSD/workspace/perler-webapp/node_modules/.multer-PkrLfCNN'
+84 silly unfinished npm timer reify 1782610375376
+85 silly unfinished npm timer reify:retireShallow 1782610375428
+86 verbose cwd /Volumes/MARS SSD/workspace/perler-webapp
+87 verbose os Darwin 24.6.0
+88 verbose node v22.17.0
+89 verbose npm  v10.9.2
+90 verbose exit -66
+91 verbose code -66
+92 error A complete log of this run can be found in: /Volumes/MARS SSD/workspace/perler-webapp/.npm-logs/2026-06-28T01_32_55_091Z-debug-0.log
