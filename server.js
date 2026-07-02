@@ -46,10 +46,11 @@ app.post("/api/convert", upload.single("image"), async (req, res) => {
     const maxColors = body.maxColors ? clampInt(body.maxColors, 2, 221, 24) : null;
     const despeckle = body.despeckle !== "false";
     const removeBg = body.removeBg === "true";
+    const bgMode = body.bgMode === "manual" ? "manual" : "auto";
     const autoCrop = body.autoCrop === "true";
     const useAlpha = body.useAlpha !== "false";
-    const bgColor = parseRgbString(body.bgColor, [0, 0, 0]);
-    const bgThreshold = clampInt(body.bgThreshold, 0, 100, 12);
+    const bgColor = parseRgbString(body.bgColor, [255, 255, 255]);
+    const bgThreshold = clampInt(body.bgThreshold, 0, 100, 45);
     const brightness = clampFloat(body.brightness, -100, 100, 0);
     const contrast = clampFloat(body.contrast, -100, 100, 0);
     const saturation = clampFloat(body.saturation, -100, 100, 0);
@@ -64,6 +65,7 @@ app.post("/api/convert", upload.single("image"), async (req, res) => {
         bgColor,
         bgThreshold,
         useAlpha,
+        bgMode,
         padding: 0.04,
       });
       if (bbox) {
@@ -88,11 +90,11 @@ app.post("/api/convert", upload.single("image"), async (req, res) => {
     // ---- 5. 背景遮罩（可选）----
     let bgMask = null;
     if (removeBg) {
-      bgMask = PerlerCore.computeBackgroundMask(smallImageData, gridW, gridH, {
-        bgColor,
-        bgThreshold,
-        useAlpha,
-      });
+      const maskOptions = { bgColor, bgThreshold, useAlpha };
+      bgMask =
+        bgMode === "auto"
+          ? PerlerCore.computeSolidBackgroundMask(srcImageData, gridW, gridH, maskOptions)
+          : PerlerCore.computeBackgroundMask(srcImageData, gridW, gridH, maskOptions);
     }
 
     // ---- 6. 核心量化算法 ----

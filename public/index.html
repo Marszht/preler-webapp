@@ -48,9 +48,9 @@
         </label>
       </div>
       <div class="preset-row">
-        <button type="button" class="preset-btn" data-w="29" data-h="29">29×29</button>
-        <button type="button" class="preset-btn" data-w="48" data-h="48">48×48</button>
-        <button type="button" class="preset-btn" data-w="58" data-h="58">58×58</button>
+        <button type="button" class="preset-btn" data-h="29">高 29</button>
+        <button type="button" class="preset-btn" data-h="48">高 48</button>
+        <button type="button" class="preset-btn" data-h="58">高 58</button>
       </div>
     </div>
 
@@ -96,6 +96,13 @@
         <span>识别并去除背景（不出豆）</span>
       </label>
       <div id="bgOptions" class="sub-options" hidden>
+        <label class="field-block">
+          <span>模式</span>
+          <select id="bgMode">
+            <option value="auto" selected>自动识别纯色背景</option>
+            <option value="manual">手动指定背景色</option>
+          </select>
+        </label>
         <label class="checkbox-field">
           <input type="checkbox" id="useAlpha" checked />
           <span>优先用透明通道判断（PNG 抠图）</span>
@@ -103,11 +110,11 @@
         <div class="field-row">
           <label class="field">
             <span>背景色 RGB</span>
-            <input type="text" id="bgColor" value="0,0,0" placeholder="0,0,0" />
+            <input type="text" id="bgColor" value="255,255,255" placeholder="255,255,255" />
           </label>
           <label class="field">
             <span>容差</span>
-            <input type="number" id="bgThreshold" value="12" min="0" max="100" />
+            <input type="number" id="bgThreshold" value="45" min="0" max="100" />
           </label>
         </div>
         <label class="checkbox-field">
@@ -163,12 +170,7 @@
 
     <div class="stats" id="stats" hidden>
       <div class="stats-summary" id="statsSummary"></div>
-      <table class="stats-table">
-        <thead>
-          <tr><th>色号</th><th>颜色</th><th>数量</th></tr>
-        </thead>
-        <tbody id="statsBody"></tbody>
-      </table>
+      <div class="stats-grid" id="statsGrid"></div>
     </div>
   </section>
 
